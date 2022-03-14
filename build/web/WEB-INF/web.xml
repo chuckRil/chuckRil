@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <context-param>
+        <param-name>title</param-name>
+        <param-value>Bryan's Crib</param-value>
+    </context-param>
+    <context-param>
+        <param-name>contact and email</param-name>
+        <param-value>Contact: 09958473017 ||==========||Email: bryanhayreal@gmail.com </param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>LoginServletTry</servlet-name>
+        <servlet-class>LoginServletTry</servlet-class>
+        <init-param>
+            <param-name>user</param-name>
+            <param-value>chuck_ril</param-value>
+        </init-param>
+        <init-param>
+            <param-name>pword</param-name>
+            <param-value>Realstone123</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>PageServlet</servlet-name>
+        <servlet-class>PageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Hobbiesservlet</servlet-name>
+        <servlet-class>Hobbiesservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>jdbcController</servlet-name>
+        <servlet-class>controller.jdbcController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServletTry</servlet-name>
+        <url-pattern>/LoginServletTry</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PageServlet</servlet-name>
+        <url-pattern>/PageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Hobbiesservlet</servlet-name>
+        <url-pattern>/Hobbiesservlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>jdbcController</servlet-name>
+        <url-pattern>/jdbcController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
