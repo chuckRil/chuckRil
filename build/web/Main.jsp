@@ -7,6 +7,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
 <style>
         html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -30,6 +33,8 @@ time, mark, audio, video {
 }
 
 body {
+    background: rgb(3,0,37);
+background: linear-gradient(90deg, rgba(3,0,37,1) 11%, rgba(0,0,0,1) 50%, rgba(3,0,37,1) 88%);
     line-height:1;
 }
 
@@ -124,11 +129,14 @@ header{
     height: 150px;
 }
 
+a.header-brand{
+    font-family: 'Barlow', sans-serif;
+}
+
 header .header-brand{
-    font-family: Dopestyle;
+    font-family: 'Barlow', sans-serif;
     font-size: 80px;
     text-decoration: underline;
-    font-weight: 900;
    /* text-transform: uppercase;*/
     color: #111;
     display: block;
@@ -156,7 +164,6 @@ header nav ul li {
 
 header nav ul li a {
     
-    font-family: Segoe UI Light;
     font-size: 35px;
     font-weight: 600;
     padding: 65px;
@@ -187,7 +194,6 @@ header .header-Expertise{
     text-align: left;
     padding: 0px 8px 0 40px;
     border-right: 3px solid #111;
-    float: left;
     line-height: 100px;
 }
 /**/
@@ -601,6 +607,7 @@ header .header-Expertise{
  /* Full Web View (Headers Only) */
 @media only screen and (min-width: 1476px) {
     header .header-brand{
+    font-family: 'Barlow', sans-serif;
     text-decoration: none;
    /* text-transform: uppercase;*/
     margin: 31px 0;
@@ -609,6 +616,7 @@ header .header-Expertise{
     border-right: 3px solid #111;
     float: left;
     line-height: 100px;
+
   }
   
   header nav ul {
@@ -913,8 +921,8 @@ footer ul li a{
             
         </footer>
          <footernew>
-                <div class="footer"><% out.print(getServletContext().getInitParameter("contact")); %></div>
-                <div class="footer"><% out.print(getServletContext().getInitParameter("email")); %></div>
+<!--                <div class="footer"><% out.print(getServletContext().getInitParameter("contact")); %></div>
+                <div class="footer"><% out.print(getServletContext().getInitParameter("email")); %></div>-->
          </footernew>
         </div>
     </body>

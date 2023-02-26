@@ -34,6 +34,8 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    background: rgb(207,204,255);
+background: linear-gradient(90deg, rgba(207,204,255,1) 0%, rgba(250,250,255,1) 51%, rgba(162,239,255,1) 100%);
 }
 
 article,aside,details,figcaption,figure,
@@ -43,6 +45,7 @@ footer,header,hgroup,menu,nav,section {
 
 nav ul {
     list-style:none;
+    
 }
 
 blockquote, q {
@@ -257,6 +260,8 @@ header .header-content{
     line-height: 100px;
 }
 .header-content2{
+    background: rgb(207,204,255);
+background: linear-gradient(90deg, rgba(207,204,255,1) 0%, rgba(250,250,255,1) 51%, rgba(162,239,255,1) 100%);
      font-family: Anton;
     font-size: 50px;
     padding: 60px 220px;

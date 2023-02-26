@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    
     <context-param>
         <param-name>title</param-name>
-        <param-value>Bryan's Crib</param-value>
+        <param-value></param-value>
     </context-param>
     <context-param>
-        <param-name>contact and email</param-name>
-        <param-value>Contact: 09958473017 ||==========||Email: bryanhayreal@gmail.com </param-value>
+        <param-name>contact</param-name>
+        <param-value>Contact: 09958473017</param-value>
+    </context-param>
+    <context-param>
+        <param-name>email</param-name>
+        <param-value>Email: bryanhayreal@gmail.com</param-value>
     </context-param>
     <servlet>
         <servlet-name>LoginServletTry</servlet-name>
@@ -28,10 +33,6 @@
         <servlet-name>Hobbiesservlet</servlet-name>
         <servlet-class>Hobbiesservlet</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>jdbcController</servlet-name>
-        <servlet-class>controller.jdbcController</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServletTry</servlet-name>
         <url-pattern>/LoginServletTry</url-pattern>
@@ -43,10 +44,6 @@
     <servlet-mapping>
         <servlet-name>Hobbiesservlet</servlet-name>
         <url-pattern>/Hobbiesservlet.do</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>jdbcController</servlet-name>
-        <url-pattern>/jdbcController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

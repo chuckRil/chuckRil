@@ -118,6 +118,11 @@ input, select {
 
 
 /* This is the start of the Main.html Header*/
+
+body{
+    background: rgb(207,204,255);
+background: linear-gradient(90deg, rgba(207,204,255,1) 0%, rgba(250,250,255,1) 51%, rgba(162,239,255,1) 100%);
+}
 header{
     background-color: #fff;
     width: 100%;
@@ -193,6 +198,8 @@ header .header-Expertise{
 /**/
 /**/
 .header-Expertise2 {
+    background: rgb(207,204,255);
+background: linear-gradient(90deg, rgba(207,204,255,1) 0%, rgba(250,250,255,1) 51%, rgba(162,239,255,1) 100%);
     font-family: Anton;
     font-size: 50px;
     padding: 60px 450px;
@@ -286,7 +293,7 @@ header .header-content{
     height: calc(40vh - 100px);
     background-image: url('img/brooklyn2.jpg');
     background-repeat: no-repeat;
-    background-position: 48px 20px;
+/*    background-position: 48px 20px;*/
     background-size: 90%;
     margin-bottom:-5em;
     
@@ -387,7 +394,7 @@ header .header-Expertise{
     height: calc(40vh - 100px);
     background-image: url('img/brooklyn2.jpg');
     background-repeat: no-repeat;
-    background-position: 48px 20px;
+/*    background-position: 48px 20px;*/
     background-size: 90%;
     margin-bottom:-5em;
     
@@ -429,7 +436,7 @@ header .header-Expertise{
     height: calc(37vh - 100px);
     background-image: url('img/brooklyn2.jpg');
     background-repeat: no-repeat;
-    background-position: 350px 20px;
+/*    background-position: 350px 20px;*/
     background-size: contain;
     margin-bottom:-5em;
     
@@ -469,7 +476,7 @@ header .header-Expertise{
     height: calc(70vh - 200px);
     background-image: url('img/img1.jpg');
     background-repeat: no-repeat;
-    background-position: 20px 5px;
+    background-position: 90px 5px;
     background-size:contain;
     margin: 0 auto;
     position: absolute;
@@ -632,16 +639,20 @@ header nav ul li a {
 @media only screen and (min-width: 1081px){
     
 .index-photography {
-    height: calc(80vh - 100px);
-    background-position: 30px 10px;
+    height: calc(84vh - 130px);
+    padding-left: 33px;
+    background-position: center;
+    background-size: contain;
 }
 
 .index-photography2 {
     height: calc(77.3vh - 130px);
-    background-position: 40px 20px;
-    margin-bottom: -10em;
-    
+    margin-bottom: 5em;
     background-size: contain; 
+    background-position: center;
+    
+   
+   
     
 }
 
@@ -650,10 +661,8 @@ header nav ul li a {
     height: calc(89.5vh - 130px);
     background-image: url('img/brooklyn3.jpg');
     background-repeat: no-repeat;
-    background-position: 12px 15px;
+    background-position: center;
     background-size: contain;
-    margin: 0 auto;
-    
 }
 
 
@@ -829,6 +838,7 @@ subheader{
        
     </head>
     <body>
+        
         <header>
             
             
@@ -875,10 +885,10 @@ subheader{
                 <li><a href="Hobbies.jsp">Hobbies</a></li>
             </ul>
         </footer>   
-                <footernew>
+<!--                <footernew>
                 <div class="footer"><% out.print(getServletContext().getInitParameter("contact")); %></div>
                 <div class="footer"><% out.print(getServletContext().getInitParameter("email")); %></div>
-         </footernew>
+         </footernew>-->
             
         
         
